@@ -9,4 +9,4 @@ _In this project, I used create-react-app and Firebase for the backend._
 
 ## Created by ✒️
 
-* **Cristian Castro Astacio** - *Completed* - [cristian-ast](https://github.com/cristian-ast)
+* **Cristian Castro Astacio** - [cristian-ast](https://github.com/cristian-ast)
