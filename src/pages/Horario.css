@@ -1,0 +1,117 @@
+/* $title-height: 3em;
+$days-height: 3em;
+$time-width: 3em;
+$time-height: 3em;
+#dadce0: #dadce0;
+$calendar-template: $time-width 10px repeat(7, 1fr);
+#ea4335: #ea4335; */
+
+* {
+  box-sizing: border-box;
+}
+/*
+body {
+  background: #fff;
+} */
+
+.container {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 700px;
+    display: grid;
+    grid-template-rows: 3em 3em auto;
+    position: absolute;
+}
+
+.title {
+    text-align: center;
+    display: grid;
+    place-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.days {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    grid-template-columns: 3em 10px repeat(6, 1fr);
+    position: sticky;
+    border-radius: 15px 15px 0 0;
+    top: 3em;
+    z-index: 10;
+    border: 2px solid #6c757d;
+}
+
+.day {
+    border-left: 1px solid #6c757d;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 3em 10px repeat(6, 1fr);
+    grid-template-rows: repeat(16, 3em);
+    margin-bottom: 70px;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.time {
+    grid-column: 1;
+    text-align: right;
+    align-self: end;
+    font-size: 80%;
+    position: relative;
+    bottom: 1ex;
+    padding-right: 2px;
+}
+
+.col {
+    border-right: 1px solid #6c757d;
+    grid-row: 1 / span 24;
+    grid-column: span 1;
+}
+
+.filler-col {
+    grid-row: 1 / -1;
+    grid-column: 2;
+    border-right: 1px solid #6c757d;
+}
+
+.row {
+    grid-column: 2 / -2;
+    border-bottom: 1px solid #6c757d;
+}
+
+.event {
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 95%;
+    cursor: pointer;
+    color: white;
+    line-height: 1;
+    z-index: 2;
+    margin: 2px;
+    word-break : break-word;
+}
+
+.current-time {
+    border: 3px solid white;
+    position: relative;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: #ea4335;
+    position: relative;
+    top: -6px;
+    left: -6px;
+    z-index: 2;
+}
+
+.current {
+    font-weight: bold;
+}
