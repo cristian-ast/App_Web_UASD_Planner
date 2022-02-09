@@ -4,7 +4,7 @@ _React Project that allows students to organize their schedule, grades, homework
 
 ## Starting 🚀
 
-_In this proyect I used creat-react-app end for the backend Firebase_
+_In this project, I used create-react-app and Firebase for the backend._
 
 
 ## Created by ✒️
